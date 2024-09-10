@@ -13,17 +13,17 @@ class _Login2State extends State<Login2> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      resizeToAvoidBottomInset: false,
       backgroundColor: const Color(0xffffffff),
+      appBar: AppBar(
+        backgroundColor: Color(0xffffffff),
+      ),
       body:SafeArea(
         child:
         Center(
           child: Column(
             children: [
-              const ListTile(
-                leading: Icon(Icons.arrow_back_ios_new,size: 30,),
-              ),
               SizedBox(
-                height:300,
                 width: 300,
                 child: Image.asset("images/pcmart.jpg"),
               ),

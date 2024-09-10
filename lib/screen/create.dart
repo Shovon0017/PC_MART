@@ -12,17 +12,17 @@ class Create extends StatefulWidget {
 class _CreateState extends State<Create> {
   @override
   Widget build(BuildContext context) {
-    return Scaffold(backgroundColor: const Color(0xffffffff),
+    return Scaffold(
+        resizeToAvoidBottomInset:false,
+        backgroundColor: const Color(0xffffffff),
+      appBar: AppBar(
+        backgroundColor: const Color(0xffffffff),),
       body:SafeArea(
         child: Center(
           child:Column(
             children: [
-              ListTile(
-                leading:const Icon(Icons.arrow_back_ios_new,size: 30,),
-                title:Image.asset("images/pcmart.jpg"),
-              ),
               const SizedBox(
-                height: 70,
+                height:40,
               ),
               const Text("Create a New Account",style: TextStyle(fontSize: 25,color: Color(0xff4d4d4d)),),
               const ListTile(
